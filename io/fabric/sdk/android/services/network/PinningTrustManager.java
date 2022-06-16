@@ -119,7 +119,11 @@ class PinningTrustManager
   {
     try
     {
+<<<<<<< HEAD
       paramX509Certificate = MessageDigest.getInstance("SHA-256").digest(paramX509Certificate.getPublicKey().getEncoded());
+=======
+      paramX509Certificate = MessageDigest.getInstance("SHA1").digest(paramX509Certificate.getPublicKey().getEncoded());
+>>>>>>> 6c6d71d2847dfd5f9f4f7c716cd820aeb7e45f2c
       Iterator localIterator = this.pins.iterator();
       while (localIterator.hasNext())
       {
